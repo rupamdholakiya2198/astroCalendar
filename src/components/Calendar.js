@@ -55,6 +55,7 @@
 import React, { useState, useEffect } from "react";
 import DayCell from "./DayCell";
 import events from "../data/events.json";
+import TITHI_CONFIG from "../data/tithiConfig";
 
 const Calendar = ({ year, month }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
@@ -87,16 +88,18 @@ const Calendar = ({ year, month }) => {
             <div key={d} className="mobile-day">
               <div className="mobile-date">{d}</div>
 
-              {dayEvents.map((e, i) => (
-                <div
-                  key={i}
-                  className="event-box"
-                  style={{ background: "#fff" }}
-                >
-                  {e.symbol} {e.title}
-                  {e.time && <div className="time">{e.time}</div>}
-                </div>
-              ))}
+{dayEvents.map((e, i) => (
+  <div
+    key={i}
+    className="event-box"
+    style={{
+      background: TITHI_CONFIG[e.type]?.color || "#e0e0e0"
+    }}
+  >
+    {e.title} {e.symbol}
+    {e.time && <div className="time">{e.time}</div>}
+  </div>
+))}
             </div>
           );
         })}
