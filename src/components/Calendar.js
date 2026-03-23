@@ -52,6 +52,100 @@
 
 // export default Calendar;
 
+// import React, { useState, useEffect } from "react";
+// import DayCell from "./DayCell";
+// import events from "../data/events.json";
+// import TITHI_CONFIG from "../data/tithiConfig";
+
+// const Calendar = ({ year, month }) => {
+//   const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+
+//   useEffect(() => {
+//     const handleResize = () => {
+//       setIsMobile(window.innerWidth < 600);
+//     };
+
+//     window.addEventListener("resize", handleResize);
+//     return () => window.removeEventListener("resize", handleResize);
+//   }, []);
+
+//   const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+//   const getEventsForDate = (date) => {
+//     return events.filter((e) => e.date === date);
+//   };
+
+//   // 📱 MOBILE VIEW (LIST)
+//   if (isMobile) {
+//     return (
+//       <div>
+//         {Array.from({ length: daysInMonth }, (_, i) => {
+//           const d = i + 1;
+//           const fullDate = `${year}-${String(month + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+//           const dayEvents = getEventsForDate(fullDate);
+
+//           return (
+//             <div key={d} className="mobile-day">
+//               <div className="mobile-date">{d}</div>
+
+// {dayEvents.map((e, i) => (
+//   <div
+//     key={i}
+//     className="event-box"
+//     style={{
+//       background: TITHI_CONFIG[e.type]?.color || "#e0e0e0"
+//     }}
+//   >
+//     {e.title} {e.symbol}
+//     {e.time && <div className="time">{e.time}</div>}
+//   </div>
+// ))}
+//             </div>
+//           );
+//         })}
+//       </div>
+//     );
+//   }
+
+//   // 💻 DESKTOP VIEW (GRID)
+//   let firstDay = new Date(year, month, 1).getDay();
+//   firstDay = firstDay === 0 ? 6 : firstDay - 1;
+
+//   const cells = [];
+
+//   for (let i = 0; i < firstDay; i++) {
+//     cells.push(<div key={"empty-" + i} className="empty"></div>);
+//   }
+
+//   for (let d = 1; d <= daysInMonth; d++) {
+//     const fullDate = `${year}-${String(month + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+//     const dayEvents = getEventsForDate(fullDate);
+
+//     cells.push(
+//   <DayCell
+//     key={d}
+//     day={d}
+//     events={dayEvents}
+//     currentMonth={month}
+//     currentYear={year}
+//   />
+// );
+//   }
+
+//   return (
+//     <>
+//       <div className="week-header">
+//         <div>Mon</div><div>Tue</div><div>Wed</div>
+//         <div>Thu</div><div>Fri</div><div>Sat</div><div>Sun</div>
+//       </div>
+
+//       <div className="calendar-grid">{cells}</div>
+//     </>
+//   );
+// };
+
+// export default Calendar;
+
 import React, { useState, useEffect } from "react";
 import DayCell from "./DayCell";
 import events from "../data/events.json";
@@ -81,25 +175,37 @@ const Calendar = ({ year, month }) => {
       <div>
         {Array.from({ length: daysInMonth }, (_, i) => {
           const d = i + 1;
+
           const fullDate = `${year}-${String(month + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
           const dayEvents = getEventsForDate(fullDate);
 
+          // ✅ TODAY HIGHLIGHT FIX
+          const today = new Date();
+          const isToday =
+            today.getDate() === d &&
+            today.getMonth() === month &&
+            today.getFullYear() === year;
+
           return (
-            <div key={d} className="mobile-day">
+            <div
+              key={d}
+              className={`mobile-day ${isToday ? "today" : ""}`}
+            >
               <div className="mobile-date">{d}</div>
 
-{dayEvents.map((e, i) => (
-  <div
-    key={i}
-    className="event-box"
-    style={{
-      background: TITHI_CONFIG[e.type]?.color || "#e0e0e0"
-    }}
-  >
-    {e.title} {e.symbol}
-    {e.time && <div className="time">{e.time}</div>}
-  </div>
-))}
+              {dayEvents.map((e, i) => (
+                <div
+                  key={i}
+                  className="event-box"
+                  style={{
+                    background:
+                      TITHI_CONFIG[e.type]?.color || "#e0e0e0",
+                  }}
+                >
+                  {e.title} {e.symbol}
+                  {e.time && <div className="time">{e.time}</div>}
+                </div>
+              ))}
             </div>
           );
         })}
@@ -122,14 +228,14 @@ const Calendar = ({ year, month }) => {
     const dayEvents = getEventsForDate(fullDate);
 
     cells.push(
-  <DayCell
-    key={d}
-    day={d}
-    events={dayEvents}
-    currentMonth={month}
-    currentYear={year}
-  />
-);
+      <DayCell
+        key={d}
+        day={d}
+        events={dayEvents}
+        currentMonth={month}
+        currentYear={year}
+      />
+    );
   }
 
   return (
