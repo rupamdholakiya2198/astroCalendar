@@ -121,7 +121,15 @@ const Calendar = ({ year, month }) => {
     const fullDate = `${year}-${String(month + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
     const dayEvents = getEventsForDate(fullDate);
 
-    cells.push(<DayCell key={d} day={d} events={dayEvents} />);
+    cells.push(
+  <DayCell
+    key={d}
+    day={d}
+    events={dayEvents}
+    currentMonth={month}
+    currentYear={year}
+  />
+);
   }
 
   return (
