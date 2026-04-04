@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "./assets/logo.png";
 
 const Auth = ({ children }) => {
   const [authenticated, setAuthenticated] = useState(false);
@@ -24,6 +25,11 @@ const Auth = ({ children }) => {
         alignItems: "center",
         flexDirection: "column"
       }}>
+
+          <div className="header">
+          <img src={logo} alt="logo" className="logos" />
+          
+             </div>
         <h2>🔐 Private Astro Calendar</h2>
 
         <input

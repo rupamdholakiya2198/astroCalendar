@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import Calendar from "./components/Calendar";
 import "./App.css";
+import logo from "./assets/logo.png";
 
 function App() {
-  const [year, setYear] = useState(2026);
-  const [month, setMonth] = useState(2); // March
+const today = new Date();
+
+const [year, setYear] = useState(today.getFullYear());
+const [month, setMonth] = useState(today.getMonth());
 
   const months = [
     "January", "February", "March", "April",
@@ -16,7 +19,11 @@ function App() {
 
   return (
     <div className="app-container">
-      <h2>Astro Calendar</h2>
+
+      <div className="header">
+  <img src={logo} alt="logo" className="logo" />
+  <h2 className="title">Astro Calendar</h2>
+     </div>
 
       {/* 🔥 DROPDOWNS */}
       <div className="controls">
