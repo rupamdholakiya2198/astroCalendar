@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Calendar from "./components/Calendar";
 import "./App.css";
 import logo from "./assets/logo.png";
-// import Auth from "./Auth";
+import Auth from "./Auth";
 
 function App() {
 const today = new Date();
@@ -19,7 +19,7 @@ const [month, setMonth] = useState(today.getMonth());
   const years = [2023, 2024, 2025, 2026, 2027];
 
   return (
-    // <Auth>
+    <Auth>
     <div className="app-container">
 
       <div className="header">
@@ -44,7 +44,7 @@ const [month, setMonth] = useState(today.getMonth());
 
       <Calendar year={year} month={month} />
     </div>
-    // </Auth>
+    </Auth>
   );
 }
 
