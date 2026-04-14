@@ -189,14 +189,7 @@ const Auth = ({ children }) => {
   // 🔓 AFTER LOGIN
   return (
     <>
-      <div style={{
-        position: "absolute",
-        top: 15,
-        right: 20,
-        display: "flex",
-        alignItems: "center",
-        gap: "10px"
-      }}>
+<div className="top-bar">
         <span style={{ color: "white", fontSize: "12px" }}>
           {/* {user.email} */}
         </span>
