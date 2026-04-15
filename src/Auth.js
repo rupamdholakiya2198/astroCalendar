@@ -87,7 +87,8 @@ const Auth = ({ children }) => {
   // 🔐 Allowed Emails
   const allowedEmails = [
     "rupamdholakiya@gmail.com",
-    "rupamdholakiya023@gmail.com"
+    "rupamdholakiya023@gmail.com",
+    "harshubh@gmail.com"
   ];
 
   // ✅ AUTO LOGIN + SESSION TRACK
