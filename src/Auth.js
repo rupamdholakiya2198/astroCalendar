@@ -89,7 +89,9 @@ const Auth = ({ children }) => {
     "rupamdholakiya@gmail.com",
     "rupamdholakiya023@gmail.com",
     "harshubh@gmail.com",
-    "rupamdholakiya2198@gmail.com"
+    "rupamdholakiya2198@gmail.com",
+    "sheikhzeeshan07@gmail.com",
+    "mishra.honey458@gmail.com"
   ];
 
   // ✅ AUTO LOGIN + SESSION TRACK
