@@ -86,12 +86,58 @@ const Auth = ({ children }) => {
 
   // 🔐 Allowed Emails
   const allowedEmails = [
+    //lifetime access emails
     "rupamdholakiya@gmail.com",
     "rupamdholakiya023@gmail.com",
     "harshubh@gmail.com",
     "rupamdholakiya2198@gmail.com",
     "sheikhzeeshan07@gmail.com",
-    "mishra.honey458@gmail.com"
+    "mishra.honey458@gmail.com",
+    "neha@harshubh.com",
+    "shah@harshubh.com",
+    "class@harshubh.com",
+
+    //",1 year access emails 21-04-2026 to 20-04-2027
+"panchalsagar287@gmail.com",
+"tusharrathi937@gmail.com",
+"pratikpc@hotmail.com",
+"jagdishbajiya3976@gmail.com",
+"sachinkhyaliya856@gmail.com",
+"ajitkumarnani2@gmail.com",
+"minakshisahare20@gmail.com",
+"cjvthate530@gmail.com",
+"arnikamilmile154@gmail.com",
+"yashjaiswal8805@yahoo.com",
+"varishasoni123@gmail.com",
+"tauseefmansoori.tm@gmail.com",
+"shubhmlunkad@gmail.com",
+"shankarshindeoppo@gmail.com",
+"wisdom.cwa@gmail.com",
+"bhavyamorbia33@gmail.com",
+"nirajdoshi03@gmail.com",
+"tt965458@gmail.com",
+"bkrajpurohit1990@gmail.com",
+"sahu113114@gmail.com",
+"amit.chandak14@gmail.com",
+"adityasahu2809@gmail.com",
+"jaiswal.rohit1118@gmail.com",
+"mirpuri.anand@gmail.com",
+"nawnitking@gmail.com",
+"dineshduhijod007@gmail.com",
+"rushikeshkulkarni34219@gmail.com",
+"gitinpatil@gmail.com",
+"blengule786@gmail.com",
+"mamtarachh@gmail.com",
+"mvbari222@gmail.com",
+"bhupendraraut2025@gmail.com",
+"roopesh500@gmail.com",
+"himanshu.virwani33@gmail.com",
+"bhishamgrg@gmail.com",
+"dkdesigner5500@gmail.com",
+"kukadeajay@gmail.com"
+
+
+
   ];
 
   // ✅ AUTO LOGIN + SESSION TRACK
