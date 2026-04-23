@@ -97,7 +97,7 @@ const Auth = ({ children }) => {
     "shah@harshubh.com",
     "class@harshubh.com",
 
-    //",1 year access emails 21-04-2026 to 20-04-2027
+    //1 year access emails 21-04-2026 to 20-04-2027
 "panchalsagar287@gmail.com",
 "tusharrathi937@gmail.com",
 "pratikpc@hotmail.com",
