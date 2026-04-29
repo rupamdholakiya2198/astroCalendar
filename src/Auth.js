@@ -137,7 +137,9 @@ const Auth = ({ children }) => {
 "emceeadityakalla@gmail.com",
 
 ////27/04/26 to 26/04/27
-"mirpuri.anisha@gmail.com"
+"mirpuri.anisha@gmail.com",
+/////29/04/26 to 28/04/27
+"compliancejural@gmail.com"
 
 
 
