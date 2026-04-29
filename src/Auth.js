@@ -116,7 +116,6 @@ const Auth = ({ children }) => {
 "bhavyamorbia33@gmail.com",
 "nirajdoshi03@gmail.com",
 "tt965458@gmail.com",
-"bkrajpurohit1990@gmail.com",
 "sahu113114@gmail.com",
 "amit.chandak14@gmail.com",
 "adityasahu2809@gmail.com",
