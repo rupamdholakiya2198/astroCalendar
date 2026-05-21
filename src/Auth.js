@@ -346,7 +346,34 @@ const Auth = ({ children }) => {
 "compliancejural@gmail.com",
 
 //////06/05/26 to 05/05/27
-"soorajligade@gmail.com"
+"soorajligade@gmail.com",
+
+
+"jayeshagnihotri789@gmail.com",
+"devangidhingani61@gmail.com",
+"ajaygodara864@gmail.com",
+"kuberconsultants21@gmail.com",
+"rahulyadav03022002@gmail.com",
+"neerajprajapati683@gmail.com",
+"sawlaniomraj210@gmail.com",
+"dhingrajatin911@gmail.com",
+"Kothe.abhishek303@gmail.com",
+"sarveshwaghmare345@gmail.com",
+"himanchalpatel98@gmail.com",
+"veerkamalbti@gmail.com",
+"chetankakad65@gmail.com",
+"pikay31@gmail.com",
+"clintonjoseph70@gmail.com",
+"preetikothari222@gmail.com",
+"aniketmate14@gmail.com",
+"manoharbaghel316@gmail.com",
+"akanshhaajaiin@gmail.com",
+"ishwardhruw1071@gmail.com",
+"atulthakor3231@gmail.com",
+"deepakthakur1261997@gmail.com",
+"anandbaradia@gmail.com",
+"Patnaikaswini3@gmail.com",
+"sanjeevbudhani22@gmail.com"
 
   ];
 
