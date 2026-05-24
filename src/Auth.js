@@ -348,7 +348,7 @@ const Auth = ({ children }) => {
 //////06/05/26 to 05/05/27
 "soorajligade@gmail.com",
 
-
+///////21/05/26 to 20/05/27
 "jayeshagnihotri789@gmail.com",
 "devangidhingani61@gmail.com",
 "ajaygodara864@gmail.com",
@@ -357,7 +357,7 @@ const Auth = ({ children }) => {
 "neerajprajapati683@gmail.com",
 "sawlaniomraj210@gmail.com",
 "dhingrajatin911@gmail.com",
-"Kothe.abhishek303@gmail.com",
+"kothe.abhishek303@gmail.com",
 "sarveshwaghmare345@gmail.com",
 "himanchalpatel98@gmail.com",
 "veerkamalbti@gmail.com",
@@ -371,8 +371,8 @@ const Auth = ({ children }) => {
 "ishwardhruw1071@gmail.com",
 "atulthakor3231@gmail.com",
 "deepakthakur1261997@gmail.com",
-"anandbaradia@gmail.com",
-"Patnaikaswini3@gmail.com",
+"anandbaradia77@gmail.com",
+"patnaikaswini3@gmail.com",
 "sanjeevbudhani22@gmail.com"
 
   ];
