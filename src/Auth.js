@@ -373,7 +373,10 @@ const Auth = ({ children }) => {
 "deepakthakur1261997@gmail.com",
 "anandbaradia77@gmail.com",
 "patnaikaswini3@gmail.com",
-"sanjeevbudhani22@gmail.com"
+"sanjeevbudhani22@gmail.com",
+
+/// 07/06/26 to 06/06/27
+"amanhms60@gmail.com"
 
   ];
 
