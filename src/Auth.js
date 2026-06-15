@@ -376,7 +376,40 @@ const Auth = ({ children }) => {
 "sanjeevbudhani22@gmail.com",
 
 /// 07/06/26 to 06/06/27
-"amanhms60@gmail.com"
+"amanhms60@gmail.com",
+
+
+//// 15/06/26 to 14/06/27
+"thakkaravinashr@gmail.com",
+"manishpatel05081997@gmail.com",
+"praful.rajkot25@gmail.com",
+"pran8585@gmail.com",
+"rohitkakkad1990@gmail.com",
+"rohitmaheshwari1995@gmail.com",
+"vividubey69@gmail.com",
+"maligopal6762@gmail.com",
+"mr.grewalsingh89@gmail.com",
+"paripallishrinivas@gmail.com",
+"vipulnenawat7@gmail.com",
+"deepakkumar2623@gmail.com",
+"Pravinkhopade2664@gmail.com",
+"Santoshj275@gmail.com",
+"shreyasc78@gmail.com",
+"vinayakjadhav581@gmail.com",
+"Cottonhub5534@gmail.com",
+"kalyan6959@gmail.com",
+"chandanbose1985@gmail.com",
+"sumitjzb39@gmail.com",
+"ashishraut074@gmail.com",
+"bhagyeshsinhvaghela824@gmail.com",
+"arnshare@gmail.com",
+"cagautamagrawal@gmail.com",
+"piyushpvp80@gmail.com",
+"vp77702@gmail.com",
+"tradingworkfromhome@gmail.com",
+"sureshkumargharjare@gmail.com",
+"vikas.redhu007@gmail.com"
+
 
   ];
 
