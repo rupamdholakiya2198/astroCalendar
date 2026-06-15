@@ -408,7 +408,9 @@ const Auth = ({ children }) => {
 "vp77702@gmail.com",
 "tradingworkfromhome@gmail.com",
 "sureshkumargharjare@gmail.com",
-"vikas.redhu007@gmail.com"
+"vikas.redhu007@gmail.com",
+"mohitbhuthada09@gmail.com",
+"shweta63gulat@gmail.com"
 
 
   ];
