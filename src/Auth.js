@@ -409,7 +409,7 @@ const Auth = ({ children }) => {
 "tradingworkfromhome@gmail.com",
 "sureshkumargharjare@gmail.com",
 "vikas.redhu007@gmail.com",
-"mohitbhuthada09@gmail.com",
+"mohitbhutada09@gmail.com",
 "shweta63gulat@gmail.com",
 
 ///16/06/26 to 15/06/27
