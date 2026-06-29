@@ -414,7 +414,10 @@ const Auth = ({ children }) => {
 
 ///16/06/26 to 15/06/27
 "cottonhub5534@gmail.com",
-"pravinkhopade2664@gmail.com"
+"pravinkhopade2664@gmail.com",
+
+///29/06/26 to 28/06/27
+"surat@harshubh.com"
 
 
   ];
