@@ -56,7 +56,10 @@ const DayCell = ({ day, events, currentMonth, currentYear }) => {
             key={i}
             className="event-box"
             style={{
-              background: TITHI_CONFIG[e.type]?.color || "#e0e0e0"
+             background:
+             TITHI_CONFIG[e.title]?.color ||
+             TITHI_CONFIG[e.type]?.color ||
+              "#e0e0e0"
             }}
           >
             {e.title} {e.symbol}

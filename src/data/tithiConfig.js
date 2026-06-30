@@ -12,7 +12,9 @@ const TITHI_CONFIG = {
   "Conjunction": { color: "#FF7043" },
   "Opposition": { color: "#8D6E63" },
   "Moon Eris Conjunction": { color: "#BA68C8" },     // Purple
-  "Moon Phase First Quarter": { color: "#4FC3F7" }  // Sky Blue
+  "Moon Phase First Quarter": { color: "#4FC3F7" }, // Sky Blue
+  "Sun Transit": { color: "#FFC107" },        // Golden Yellow Sun
+  "Mercury": { color: "#81C784" },    // Green
 };
 
 export default TITHI_CONFIG;
