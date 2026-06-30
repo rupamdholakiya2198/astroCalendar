@@ -10,7 +10,9 @@ const TITHI_CONFIG = {
   "Mars": { color: "#EF5350" },
   "Venus": { color: "#F48FB1" },
   "Conjunction": { color: "#FF7043" },
-  "Opposition": { color: "#8D6E63" }
+  "Opposition": { color: "#8D6E63" },
+  "Moon Eris Conjunction": { color: "#BA68C8" },     // Purple
+  "Moon Phase First Quarter": { color: "#4FC3F7" }  // Sky Blue
 };
 
 export default TITHI_CONFIG;
