@@ -18,6 +18,28 @@ const [month, setMonth] = useState(today.getMonth());
 
   const years = [2023, 2024, 2025, 2026, 2027];
 
+  const goToPreviousMonth = () => {
+  if (month === 0) {
+    if (year > years[0]) {
+      setMonth(11);
+      setYear(year - 1);
+    }
+  } else {
+    setMonth(month - 1);
+  }
+};
+
+const goToNextMonth = () => {
+  if (month === 11) {
+    if (year < years[years.length - 1]) {
+      setMonth(0);
+      setYear(year + 1);
+    }
+  } else {
+    setMonth(month + 1);
+  }
+};
+
   return (
     <Auth>
     <div className="app-container">
@@ -28,19 +50,47 @@ const [month, setMonth] = useState(today.getMonth());
      </div>
 
       {/* 🔥 DROPDOWNS */}
-      <div className="controls">
-        <select value={month} onChange={(e) => setMonth(Number(e.target.value))}>
-          {months.map((m, i) => (
-            <option key={i} value={i}>{m}</option>
-          ))}
-        </select>
+<div className="controls">
 
-        <select value={year} onChange={(e) => setYear(Number(e.target.value))}>
-          {years.map((y) => (
-            <option key={y} value={y}>{y}</option>
-          ))}
-        </select>
-      </div>
+  <button
+    className="nav-btn"
+    onClick={goToPreviousMonth}
+    title="Previous Month"
+  >
+    ◀
+  </button>
+
+  <select
+    value={month}
+    onChange={(e) => setMonth(Number(e.target.value))}
+  >
+    {months.map((m, i) => (
+      <option key={i} value={i}>
+        {m}
+      </option>
+    ))}
+  </select>
+
+  <select
+    value={year}
+    onChange={(e) => setYear(Number(e.target.value))}
+  >
+    {years.map((y) => (
+      <option key={y} value={y}>
+        {y}
+      </option>
+    ))}
+  </select>
+
+  <button
+    className="nav-btn"
+    onClick={goToNextMonth}
+    title="Next Month"
+  >
+    ▶
+  </button>
+
+</div>
 
       <Calendar year={year} month={month} />
     </div>
